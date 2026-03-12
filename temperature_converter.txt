@@ -1,0 +1,24 @@
+t=input()
+if t.endswith("C"):
+    tempreture=str(t).replace("C"," ")
+    print(str(float(tempreture))+"C")
+    fahren_heat=float(tempreture)*(9/5)+32
+    print(str(float(fahren_heat))+"F")
+    kelvin=float(tempreture)+273
+    print(str(float(kelvin))+"K")
+elif t.endswith("F"):
+    tem=t.replace("F"," ")
+    cel=(float(tem)-32)*(5/9)
+    print(str(round(float(cel),2))+"C")
+    fah=t.replace("F"," ")
+    print(str(float(fah))+"F")
+    kel=(float(fah)-32)*(5/9)+273
+    print(str(round(float(kel),2))+"K")
+elif t.endswith("K"):
+    tem=t.replace("K"," ")
+    cel=float(tem)-273
+    print(str(cel)+"C")
+    fah=(float(tem)-273)*(9/5)+32
+    print(str(round(fah,1))+"F")
+    print(str(float(tem))+"K")
+    
